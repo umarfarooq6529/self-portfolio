@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  font-family: "Courier New", Courier, monospace !important;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  color: black;
+  background-color: whitesmoke;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+/* header */
+
+.header-container {
+  z-index: 100;
+  position: fixed;
+  width: 100%;
+  color: whitesmoke;
+  background-color: #151922;
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 20px;
+  line-height: 8vh;
+}
+
+.header-top h1 {
+  margin-block: 5px;
+  font-size: 5vh;
+}
+
+.header-nav a {
+  padding-inline: 3px;
+  text-decoration: none;
+  color: #eee;
+}
+
+.header-nav a:hover {
+  color: black;
+  transition: 0.3s;
+  background-color: whitesmoke;
+  padding-block: 18px;
+}
+
+/* main */
+
+main {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-areas: "left right";
+  padding-right: 50vh;
+}
+
+.main-right {
+  grid-area: right;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.4);
+  background-color: white;
+  border-radius: 10px;
+  margin: 30px;
+}
+
+.right-content {
+  text-align: left;
+  padding: 50px;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-content {
+  margin-top: 10px;
+  border: gray solid 1px;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+input {
+  width: 86vh;
+  height: 45px;
+  border: black solid 1px;
+  border-radius: 100px;
+  padding-inline: 20px;
+  font-size: 18px;
+}
+
+.form-item {
+  padding-block: 0px;
+  padding-inline: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.submit {
+  padding-block: 30px;
+}
+
+input[type="submit"] {
+  color: white;
+  cursor: pointer;
+  border: none;
+  background: #151922;
+}
+
+.form-item label {
+  font-size: 19px;
+  transform: translate(20px, 14px);
+  background-color: white;
+  width: fit-content;
+  padding: 0 5px;
+}
+
+/* footer */
+
+.footer-container {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  background-color: #151922;
+  padding: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+  gap: 50px;
+}
+
+footer img {
+  filter: invert();
+}
+
+#insta-icon {
+  margin-top: 2px;
+}
